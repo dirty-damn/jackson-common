@@ -111,7 +111,7 @@ public abstract class Jackson {
      * java 对象转化
      *
      * @param value         java 对象
-     * @param typeReference 能够嵌套模版转化，比如 new TypeReference< Map< String,String>>(){}
+     * @param typeReference 能够嵌套模版转化，比如 new TypeReference&lt;Map&lt;String,String&gt;&gt;(){}
      * @param <T>           模版
      * @return 转化后对象
      */
@@ -179,7 +179,9 @@ public abstract class Jackson {
     /**
      * json string 转化成 java 对象
      *
+     * @param <T> 类型
      * @param text json string
+     * @param typeReference 嵌套类型
      * @return java 对象
      */
     public static <T> T parseJavaObject(String text, TypeReference<T> typeReference) {
@@ -197,7 +199,9 @@ public abstract class Jackson {
     /**
      * json string 转化成 java 对象
      *
+     * @param <T> 泛型
      * @param text json string
+     * @param type clazz
      * @return java 对象
      */
     public static <T> T parseJavaObject(String text, Class<T> type) {
@@ -247,6 +251,7 @@ public abstract class Jackson {
     /**
      * 转化成 json 对象
      *
+     * @param <T> 泛型
      * @param type 对象类型
      * @return json 对象
      */
@@ -257,6 +262,7 @@ public abstract class Jackson {
     /**
      * 转化成 json 对象
      *
+     * @param <T> 泛型
      * @param typeReference 对象类型
      * @return json 对象
      */

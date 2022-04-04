@@ -100,7 +100,9 @@ public class JacksonArray extends Jackson implements Iterable<JsonNode> {
     /**
      * 通过下标获取 java 对象
      *
+     * @param <T> 泛型
      * @param index 下标
+     * @param clazz clazz
      * @return java 对象
      */
     public <T> T getObject(int index, Class<T> clazz) {
@@ -112,8 +114,9 @@ public class JacksonArray extends Jackson implements Iterable<JsonNode> {
     /**
      * 通过下标获取 java 对象
      *
+     * @param <T> 泛型
      * @param index         下标
-     * @param typeReference 能够嵌套模版转化，比如 new TypeReference< Map< String, String>>(){}
+     * @param typeReference 能够嵌套模版转化，比如 new TypeReference&lt;Map&lt;String, String&gt;&gt;(){}
      * @return java 对象
      */
     public <T> T getObject(int index, TypeReference<T> typeReference) {
@@ -163,6 +166,7 @@ public class JacksonArray extends Jackson implements Iterable<JsonNode> {
      *
      * @param index 下标
      * @return byte 数组
+     * @throws IOException 异常
      */
     public byte[] getBytes(int index) throws IOException {
         JsonNode value = arrayNode.get(index);
@@ -435,6 +439,7 @@ public class JacksonArray extends Jackson implements Iterable<JsonNode> {
     /**
      * 添加元素，可以为 null
      *
+     * @param e 入参
      * @return 自身 JacksonArray
      */
     public JacksonArray add(Object... e) {

@@ -131,7 +131,9 @@ public class JacksonObject extends Jackson {
     /**
      * 通过 key 获取 java 对象
      *
+     * @param <T> 泛型
      * @param key key
+     * @param clazz clazz
      * @return java 对象
      */
     public <T> T getObject(String key, Class<T> clazz) {
@@ -150,8 +152,9 @@ public class JacksonObject extends Jackson {
     /**
      * 通过 key 获取 java 对象
      *
+     * @param <T> 泛型
      * @param key           key
-     * @param typeReference 能够嵌套模版转化，比如 new TypeReference< Map< String, String>>(){}
+     * @param typeReference 能够嵌套模版转化，比如 new TypeReference&lt;Map&lt;String, String&gt;&gt;(){}
      * @return java 对象
      */
     public <T> T getObject(String key, TypeReference<T> typeReference) {
@@ -494,6 +497,7 @@ public class JacksonObject extends Jackson {
     /**
      * 映射值
      *
+     * @param <T> 泛型
      * @param key      key
      * @param function 函数
      * @return 映射值
