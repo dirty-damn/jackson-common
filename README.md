@@ -6,7 +6,7 @@
 # Jackson
 方法功能如下：
 
-![1648979189785](.assets\Readme\1648979189785.png)
+![1648979189785](https://github.com/dirty-damn/jackson-common/tree/main/.assets\Readme\1648979189785.png)
 
 1
 
@@ -48,7 +48,7 @@ this转对象
 
 # JacksonObject
 
-![1648978943486](.assets\Readme\1648978943486.png)
+![1648978943486](https://github.com/dirty-damn/jackson-common/tree/main/.assets\Readme\1648978943486.png)
 
 **1.获取Jackson对象**
 
@@ -101,7 +101,7 @@ ifPresent()
 
 # JacksonObject
 
-![1648983679631](.assets\Readme\1648983679631.png)
+![1648983679631](https://github.com/dirty-damn/jackson-common/tree/main/.assets\Readme\1648983679631.png)
 
 **1.获取Jackson对象**
 
